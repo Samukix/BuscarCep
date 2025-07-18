@@ -1,7 +1,9 @@
 import 'package:dio/dio.dart';
+import 'dart:io';
 
-void main () async{
-  await getCep ('');
+void main () {
+   String? getCep = stdin.readLineSync();
+   print('Cep Desejado: ${getCep}');
 }
 
     Future<void> getCep (String cep) async {
